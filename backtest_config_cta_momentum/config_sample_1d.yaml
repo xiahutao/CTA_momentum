@@ -1,0 +1,71 @@
+data:
+  freq: 1d
+  price_type: un
+execution:
+  exec_lag: 1
+  exec_price_mode: EXEC_BY_OPEN
+result:
+  result_folder: e:\Strategy
+settle: {}
+strategy:
+  id: 1
+  config_file: D:\strategy_signal\signal_config
+  config_file_output: D:\tradelib\test\batch_requests
+  product_group:
+    - A
+    - AG
+    - AL
+    - AP
+    - AU
+    - B
+    - BU
+    - C
+    - CF
+    - CS
+    - CU
+    - CY
+    - FG
+    - HC
+    - I
+    - IC
+    - IF
+    - IH
+    - J
+    - JD
+    - JM
+    - L
+    - M
+    - MA
+    - NI
+    - OI
+    - P
+    - PB
+    - PP
+    - RB
+    - RM
+    - RU
+    - SC
+    - SF
+    - SM
+    - SN
+    - SR
+    - T
+    - TA
+    - TF
+    - V
+    - Y
+    - ZC
+    - ZN
+  strategy_type: CtaMomentum
+  capital: 1000000
+  s_period: [4, 8, 16, 32, 64]
+  l_period: [8, 16, 32, 64, 128]
+  scaler: 3
+  daily_start_time: 9:00:00
+  daily_end_time: 23:30:00
+  start_date: 2000-01-01
+  end_date: 2019-08-30
+  period: '1d'
+  maxLeverage: 4
+  targetVol: 0.1
+  master_config_prefix: cta_daily_requests
